@@ -289,6 +289,4 @@ def render_messages():
             st.chat_message(msg["role"]).markdown(msg["content"])
 
 def introduction():
-    st.info("PIPKA is deprecated and will be shut down during march. Use [TrustAI User Interface](https://trustsoft.atlassian.net/wiki/spaces/GenAI/pages/319193170/TrustAI+User+Interface)")
-    st.write()
     st.warning("👉 Set your AWS Bedrock model, parameters and press \'Save Changes 🚀\' buttonek 🤘")
