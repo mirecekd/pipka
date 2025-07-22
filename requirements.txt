@@ -1,0 +1,16 @@
+open-interpreter
+numexpr
+streamlit
+streamlit-extras
+streamlit-option-menu
+st-multimodal-chatinput
+botocore
+boto3
+wget
+SpeechRecognition
+atlassian-python-api
+pydub
+playwright
+instructor
+anthropic
+ffmpeg

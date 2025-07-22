@@ -1,0 +1,11 @@
+--- a/interpreter/core/llm/llm.py
++++ b/interpreter/core/llm/llm.py
+@@ -7,6 +7,7 @@
+ 
+ litellm.suppress_debug_info = True
+ litellm.REPEATED_STREAMING_CHUNK_LIMIT = 99999999
++litellm.modify_params=True
+ 
+ import json
+ import logging
+ 

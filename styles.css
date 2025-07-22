@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f2f6;
+}
+
+.stApp {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Sidebar styles */
+.css-1d391kg {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Button styles */
+.stButton > button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #2980b9;
+}
+
+/* Chat message styles */
+.stChatMessage {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stChatMessage.user {
+    background-color: #e8f4f8;
+}
+
+.stChatMessage.assistant {
+    background-color: #f0f0f0;
+}
+
+/* Code block styles */
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/* Progress bar styles */
+.stProgress > div > div {
+    background-color: #2ecc71;
+}
+
+/* Expander styles */
+.streamlit-expanderHeader {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+/* Selectbox styles */
+.stSelectbox > div > div {
+    background-color: white;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+/* Slider styles */
+.stSlider > div > div > div > div {
+    background-color: #3498db;
+}
+
+/* File uploader styles */
+.stFileUploader > div > div {
+    border: 2px dashed #bdc3c7;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Improve readability for code and console output */
+.stCodeBlock, .stCodeBlock pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.4;
+}

@@ -1,0 +1,26 @@
+
+graph TD
+    A[Client] <-->|HTTP POST /chat| B[Flask Server]
+    B <--> P[Open Interpreter]
+    P <--> D[Claude models]
+    D <--> O
+    K <--> N
+    L <--> M
+    
+    subgraph Flask Application
+        B
+        K[text to speach] 
+        L[speach to text]
+        
+    end
+    
+    subgraph Open Interpreter
+        P
+        Q[code running]
+    end
+    
+    subgraph AWS
+        O[Amazon Bedrock]
+        M[Amazon Polly]
+        N[Amazon Transcribe]
+    end
