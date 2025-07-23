@@ -49,12 +49,19 @@ And what PIPKA is not able to solve, it can write and run script/program for you
 - interacts with cloud APIs (you can configure your AWS SSO for example, Google CLI, Azure CLI)
 - can connect via SSH/SSM to servers
 
+
+## Run from CLI
+```bash
+pip install -r requirements.txt
+streamlit run app.py --server.enableCORS false --server.enableXsrfProtection false
+```
+
 ## Docker Deployment
 
 To run PIPKA using Docker, use the following command:
 
 ```bash
-docker run --detach --name pipka -p 8501:8501 -v /home/$USER/pipka-workspace/:/app/workspace -e USEREK="ai@mirecek.org" ghcr.io/mirecekd/pipka:latest
+docker run --detach --name pipka -p 8501:8501 -v  -v /home/$USER/.aws:/root/.aws -v /home/$USER/pipka-workspace/:/app/workspace -e USEREK="ai@mirecek.org" ghcr.io/mirecekd/pipka:latest
 ```
 
 This will:
