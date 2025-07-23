@@ -5,11 +5,23 @@ on:
     branches:
       - main
       - develop
+    paths-ignore:
+      - '*.md'
+      - '*.txt'
+      - 'LICENSE'
+      - '.gitignore'
+      - 'docs/**'
     tags:
       - 'v*'
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - '*.md'
+      - '*.txt'
+      - 'LICENSE'
+      - '.gitignore'
+      - 'docs/**'
 
 env:
   REGISTRY: ghcr.io
